@@ -159,12 +159,6 @@
 </p>
 
 <h2>Авторы</h2>
-<style>
-        ul {
-            list-style-type: none; /* Убираем точки из списка */
-            padding: 0; /* Убираем отступы */
-        }
-</style>
 <h4>Andrey Lyubichenko</h4>
 
 <ul>
