@@ -4,89 +4,74 @@
   <a href="https://github.com/Coderok-ru/cryptor"><img src="https://raw.githubusercontent.com/Coderok-ru/cryptor/main/assets/cryptor-img.png"></a>
 </p>
 
-
 <h2 align="center">Cryptor for macOS & Windows 11</h2>
 
 <div align="center">
   <pre style="display: inline-block; text-align: left;">
-    Если у вас есть замечания или предложения по дальнейшему развитию, напишите мне в <b><a href="https://t.me/coderok_official">@coderok</a></b></pre></div>
+    Если у вас есть замечания или предложения по дальнейшему развитию приложения, напишите мне в <b><a href="https://t.me/coderok_official">Telegram @coderok</a></b></pre></div>
   
-You can use this app to create bootable universal USB <strong>Windows installers</strong> that supports both <strong>UEFI</strong> and <strong>Legacy BIOS</strong> modes.<br>
-With this USB drive, you can install and enjoy <strong>Windows</strong> on your <strong>PC</strong>, <strong>Intel Mac</strong> or certain <strong>Virtual Machines</strong>.
+Программа <strong>Cryptor</strong> предназначена для шифрования данных в таблицах формата <strong>.csv</strong> и дальнейшей передачи зашифрованных данных по открытым каналам связи (email, соцсети и мессенджеры). Так же <strong>Cryptor</strong> умееет зашифровывать любой текст по протоколу AES, используя ключ который вы задаете сами. А далее расшифровывать эти данные по ключу. Таким образом становится возможной передача шифрованных данных посредством любого мессенджера, с полной сохранностью данных.
 
 <center>
-  <img alt="Cryptor Main Window" src="https://raw.githubusercontent.com/Coderok-ru/cryptor/main/assets/cryptor-img.png">
+  <img alt="Cryptor Main Window" src="https://raw.githubusercontent.com/Coderok-ru/cryptor/main/assets/screen-crypto.png">
 </center>
 
-<h2>Table of Contents</h2>
+<h2>Оглавление</h2>
 <b>
 <ol>
-  <li><a href="#features">Features</a></li>
-  <li><a href="#compatibility">Compatibility</a>
+  <li><a href="#features">Возможности</a></li>
+  <li><a href="#compatibility">Установка</a>
     <ol>
-      <li><a href="#-supported-windows-images">💻 Supported Windows Images</a></li>
-      <li><a href="#-supported-macos-versions">🍏 Supported macOS Versions</a></li>
+      <li><a href="#-supported-windows-images">💻 Требования Windows</a></li>
+      <li><a href="#-supported-macos-versions">🍏 Требования macOS</a></li>
     </ol>
   </li>
-  <li><a href="#planned-changes">Planned Changes</a></li>
-  <li><a href="#additional-information">Additional Information</a></li>
-  <li><a href="#%EF%B8%8F-support-me-%EF%B8%8F-donations">❤️ Support Me ❤️ (Donations)</a></li>
-  <li><a href="#authors">Authors</a></li>
-  <li><a href="#software-used">Software Used</a></li>
+  <li><a href="#planned-changes">Дорожная карта</a></li>
+  <li><a href="#additional-information">Отказ от ответственности</a></li>
+  <li><a href="#authors">Авторы</a></li>
 </ol>
 </b>
 
-<h2>Features</h2>
+<h2>Возможности</h2>
 <ul>
    <li>
-     📀 <strong>Create Bootable USB Windows Installers</strong><br>
+     🔐 <strong>Шифрование файлов .csv</strong><br>
       <sub>
-        WinDiskWriter knows how to make a bootable drive for each Windows Image type.
+        Шифрование помогает защитить личные данные и другую чувствительную информацию, содержащуюся в файлах CSV, например, информацию о клиентах, финансовые данные или медицинские записи.<br>
+        Зашифрованные файлы CSV можно безопасно передавать по незащищенным каналам связи, таким как электронная почта или облачные хранилища, снижая риск утечки данных</strong>
       </sub>
    </li>
   <br>
    <li>
-     🛠 <strong>Patch Windows 11 Installer</strong><br>
+     🔐 <strong>Шифрование и дешифрование пользовательского текста</strong><br>
       <sub>
-        You can bypass TPM, Minimum RAM, Secure Boot and some other System Requirements set by Microsoft for Windows 11.<br>
-        Just click <strong>Patch Installer Requirements</strong> before writing.
-      </sub>
-   </li>
-  <br>
-   <li>
-     👾 <strong>Legacy BIOS Support</strong><br>
-      <sub>
-        You can create an all-in-one USB drive that supports both <strong>UEFI</strong> and <strong>Legacy</strong> boot modes.<br>
-        It&#39;s required if you want to install Windows on computers with <strong>old firmwares</strong> that don&#39;t support EFI booting.
-      </sub>
-   </li>
-  <br>
-   <li>
-     🔐 <strong>Add EFI Support to Windows Vista and 7</strong><br>
-      <sub>
-        Windows Vista and 7 don&#39;t support EFI booting out of the box.<br>
-        Additional steps are required to get these versions to boot on EFI, such as extracting a EFI-capable bootloader from the installer. <strong>WinDiskWriter does it for you!</strong>
-      </sub>
-   </li>
-  <br>
-   <li>
-     🗂 <strong>Split Windows Installer Images</strong><br>
-      <sub>
-        Newer Windows ISOs contain a large (<strong>&gt;4GB</strong>) install.wim file.<br>
-        Since FAT32 only supports file sizes up to 4GB, WinDiskWriter <strong>automatically splits it for you!</strong>
+      Обеспечение конфиденциального общения: Позволяет пользователям безопасно обмениваться сообщениями или файлами, которые могут быть расшифрованы только получателем с соответствующим ключом. <br>Защита служебной информации: Шифрование текстов с использованием AES помогает защитить служебные документы или конфиденциальную переписку от несанкционированного доступа.
+       </strong>
       </sub>
    </li>
 </ul>
 
-<h2>Compatibility</h2>
-<h3>💻 Supported Windows Images</h3>
+<h2>Установка</h2>
+<table>
+    <tbody>
+        <tr>
+            <td>Windows</td>
+            <td align="center"><a href="https://github.com/Coderok-ru/cryptor/releases/download/windows/CryptorInstaller.exe">Скачать</a></td>
+        </tr>
+        <tr>
+            <td>macOS</td>
+            <td align="center"><a href="https://apps.apple.com/ru/app/cryptor/id6737717654?mt=12">Скачать</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>💻 Минимальные требования Windows</h3>
 <table>
     <thead>
         <tr>
-            <th>Version</th>
-            <th>Architecture</th>
-            <th>Boot Mode</th>
-            <th>Verified?</th>
+            <th>Версия</th>
+            <th>Архитектура</th>
+            <th>Boot мод</th>
         </tr>
     </thead>
     <tbody>
@@ -94,41 +79,29 @@ With this USB drive, you can install and enjoy <strong>Windows</strong> on your 
             <td>Windows 11</td>
             <td align="center">x64</td>
             <td rowspan="6" align="center">UEFI,<br>Legacy</td>
-            <td rowspan="6" align="center">Yes</td>
         </tr>
         <tr>
             <td>Windows 10</td>
-            <td rowspan="5" align="center">x64,<br>x32</td>
-        </tr>
-        <tr>
-            <td>Windows 8.1</td>
-        </tr>
-        <tr>
-            <td>Windows 8</td>
-        </tr>
-        <tr>
-            <td>Windows 7</td>
-        </tr>
-        <tr>
-            <td>Windows Vista</td>
+            <td rowspan="5" align="center">x64
         </tr>
     </tbody>
 </table>
 
-<h3>🍏 Supported macOS Versions</h3>
+<h3>🍏 Минимальные требования macOS</h3>
 <table>
     <thead>
         <tr>
-            <th>Version</th>
-            <th>Architecture</th>
-            <th>Verified?</th>
+            <th>Версия</th>
+            <th>Архитектура</th>
         </tr>
     </thead>
     <tbody>
         <tr>
+            <td>macOS Sequoia 15.0 и выше</td>
+            <td rowspan="5" align="center">x86_64,<br>ARM64</td>
+        </tr>
+        <tr>
             <td>macOS Sonoma 14.0</td>
-            <td rowspan="4" align="center">x86_64,<br>ARM64</td>
-            <td rowspan="11" align="center">Yes</td>
         </tr>
         <tr>
             <td>macOS Ventura 13.0</td>
@@ -139,143 +112,66 @@ With this USB drive, you can install and enjoy <strong>Windows</strong> on your 
         <tr>
             <td>macOS Big Sur 11.0</td>
         </tr>
-        <tr>
-            <td>macOS Catalina 10.15</td>
-            <td rowspan="10" align="center">x86_64</td>
-        </tr>
-        <tr>
-            <td>macOS Mojave 10.14</td>
-        </tr>
-        <tr>
-            <td>macOS High Sierra 10.13</td>
-        </tr>
-        <tr>
-            <td>macOS Sierra 10.12</td>
-        </tr>
-        <tr>
-            <td>OS X El Capitan 10.11</td>
-        </tr>
-        <tr>
-            <td>OS X Yosemite 10.10</td>
-        </tr>
-        <tr>
-            <td>OS X Mavericks 10.9</td>
-        </tr>
-        <tr>
-            <td>Mac OS X Mountain Lion 10.8</td>
-            <td rowspan="3" align="center">
-              Not Yet<br>
-              <sub>(but it should work!)</sub>
-            </td>
-        </tr>
-        <tr>
-            <td>Mac OS X Lion 10.7</td>
-        </tr>
-        <tr>
-            <td>Mac OS X Snow Leopard 10.6</td>
-        </tr>
     </tbody>
 </table>
 
-<h2>Planned Changes</h2>
+<h2>Дорожная карта</h2>
 <ul>
    <li>
-      📁 <strong>Add support for selecting individual partitions</strong><br>
+      📁 <strong>Расшифровка CSV файлов</strong><br>
          <sub>
-           This will allow you to choose the destination device not only from the list of ‘whole’ disks, but also the individual partitions of your USB drive or any internal disk.
+            - Цель: Добавить возможность не только шифрования, но и расшифровки CSV файлов, что позволит пользователям восстанавливать исходные данные из ранее зашифрованных файлов.<br>
+             - Ожидаемый результат: Удобство и гибкость в работе с данными для пользователей, которые часто работают с CSV файлами.
          </sub>
    </li>
   <br>
    <li>
-      🗜 <strong>Add support for splitting install.esd (compressed system image) files</strong><br>
+      🗜 <strong>Шифрование PDF файлов</strong><br>
          <sub>
-           Some Windows ISOs, (usually repacks) use .esd system images for better compression.<br>
-           But sometimes, even a .esd file is too large to fit into FAT32 partitions.<br>
-           Right now, WinDiskWriter can only split install.wim images. Splitting .esd requires wimlib to be updated.
+            - Цель: Внедрить функцию шифрования PDF документов для расширения возможностей защиты конфиденциальной информации.<br>
+            - Ожидаемый результат: Возможность защищать документы, содержащие критически важную информацию, с использованием надежных методов шифрования.
          </sub>
    </li>
   <br>
    <li>
-      💻 <strong>Add support for 32-bit Macs</strong><br>
+      💻 <strong>Моментальное шифрование с помощью фото</strong><br>
       <sub>
-        Right now, you can only use WinDiskWriter on Intel x64 / Apple silicon Mac computers.<br>
-        Since this software has the minimum Mac OS X requirements of Snow Leopard 10.6, it's possible to compile a 32-bit build.<br>
-        But I can’t do it right now, since this kind of build operation isn’t supported on Apple Silicon.
+        - Цель: Разработать возможность моментального шифрования данных, используя изображения, что позволит пользователям зашифровывать текст или файлы с помощью фотографии.<br>
+        - Ожидаемый результат: Уникальная и инновационная функция, которая расширит способы взаимодействия с приложением и повысит уровень безопасности данных.
       </sub>
    </li>
   <br>
    <li>
-      📝 <strong>Implement a feature that allows adding a custom ei.cfg</strong><br>
+      🌐 <strong>Прямая отправка данных и сообщений между пользователями приложения</strong><br>
          <sub>
-           This feature will allow users to select the Windows edition of their choice, regardless of the ACPI SLIC configuration.
+           - Цель: Разработать систему для безопасной и прямой отправки зашифрованных данных и сообщений между пользователями приложения Cryptor.<br>
+            - Ожидаемый результат: Пользователи смогут напрямую и безопасно обмениваться зашифрованной информацией и сообщениями, что повышает ценность приложения в контексте защиты конфиденциальной информации.
          </sub>
    </li>
   <br>
-   <li>
-      🌐 <strong>Implement a feature that allows to skip the online account requirement from Windows 11 22H2+</strong><br>
-         <sub>
-           This feature will allow users to skip the requirement for signing in to their Microsoft Account on the install stage.<br>
-           Since this feature isn't implemented, use "<strong>OOBE/BYPASSNRO</strong>" by pressing Shift+F10 on the Microsoft Account login stage.
-         </sub>
-   </li>
-  <br>
-   <li>
-      🎨 <strong>Resolve UI drawing issues on Mac OS X Mavericks 10.9 and lower</strong><br>
-         <sub>
-           There are some UI drawing issues on some older Mac OS X versions due to different behaviour of some system views.<br>
-           It’s not critical at all, and it doesn’t affect functionality.
-         </sub>
-   </li>
 </ul>
 
-<h2>Additional Information</h2>
+<h2>Отказ от ответственности</h2>
 <p>
-   This software is written in <b>Objective-C</b>, a programming language that allows it to run on <b>many versions of macOS</b>, from <b>Snow Leopard 10.6</b> to <b>Sonoma 14.0</b>. Objective-C is a powerful and efficient language that combines object-oriented and dynamic features with the C language.<br><br>
-   <b>WinDiskWriter</b> uses <b>wimlib</b>, a library for manipulating Windows Image (WIM) files, to perform operations such as splitting, patching, and extracting. I would like to thank the developers of wimlib for their amazing work and contribution to the open source community.<br><br>
-   <b>WinDiskWriter</b> optionally can use a <b>grub4dos</b> bootloader to enable Legacy BIOS Support. I would like to thank the developers of grub4dos for their great work.
+   Данное приложение распространяется <b>как есть</b>, без каких-либо гарантий, явных или подразумеваемых, включая, но не ограничиваясь, подразумеваемыми гарантиями товарной пригодности и пригодности для конкретной цели. Используя это программное обеспечение, вы соглашаетесь с тем, что автор не несет ответственности за любые убытки, прямые или косвенные, которые могут возникнуть в результате использования этого программного обеспечения.<br><br>
+   Автор не предоставляет никаких гарантий, что программное обеспечение будет соответствовать вашим требованиям или будет работать бесперебойно и без ошибок. Все риски, связанные с использованием этого программного обеспечения, ложатся на вас. Программное обеспечение предоставляется в том состоянии, в котором оно находится на момент распространения, и дальнейшая поддержка или обновления могут не предоставляться.<br><br>
+   Любые претензии к автору по поводу работы или содержания программного обеспечения не принимаются.
 </p>
 
-<h2>❤️ Support Me ❤️ (Donations)</h2>
-<p align="center">
-  <a href="https://www.buymeacoffee.com/TechUnRestricted" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/arial-red.png" alt="Buy Me A Coffee" style="width: 280px !important;" >
-  </a>
-</p>
-<ul>
-  <li>
-    Bitcoin (BTC): <b>bc1qe2z68uwgplxfzspdy5pnxhzza2spep0ryk5zeq</b>
-  </li>
-  <li>
-    Toncoin [TON]: <b>UQBzFgALzKsCW6dLrc4sA0WoBhdODEK2KliGgoi1Hj8UqXOb</b>
-  </li>
-  <li>
-    Etherium (ETH): <b>0x1410acAc3e0De885f4fb8C305a2F7B586d47c5ff</b>
-  </li>
-  <li>
-    BNB Beacon Chain (BNB): <b>bnb1h2svmvj9842xk49qjflza4q8yqn2kd9dsxp9h9</b>
-  </li>
-  <li>
-    Tether USD [USDT] (<b>E</b>RC20): <b>0x1410acAc3e0De885f4fb8C305a2F7B586d47c5ff</b>
-  </li>
-  <li>
-    Tether USD [USDT] (<b>T</b>RC20): <b>TKR1dtAHsHwaQYwUx6FGTwpfUM9rzepGVu</b>
-  </li>
-</ul>
+<h2>Авторы</h2>
+<style>
+        ul {
+            list-style-type: none; /* Убираем точки из списка */
+            padding: 0; /* Убираем отступы */
+        }
+</style>
+<h4>Andrey Lyubichenko</h4>
 
-<h2>Authors</h2>
 <ul>
     <li>
-        <a href="https://www.github.com/TechUnRestricted">@TechUnRestricted</a>
-    </li>
-</ul>
-
-<h2>Software Used</h2>
-<ul>
-    <li>
-      <a href="https://wimlib.net/">wimlib</a> <sub><sup><a href="https://github.com/TechUnRestricted/windiskwriter/blob/main/libs/wimlib/License.txt">(GNU LESSER GENERAL PUBLIC LICENSE Version 3)</a></sup></sub>
-    </li>
+      <a href="https://t.me/coderok_official">@coderok</a>
+  </li>
   <li>
-      <a href="https://github.com/chenall/grub4dos">grub4dos</a> <sub><sup><a href="https://github.com/chenall/grub4dos/blob/0.4.6a/COPYING">(GNU GENERAL PUBLIC LICENSE Version 2)</a><br>
-        (grub4dos is a downloadable option in WinDiskWriter)</sup></sub>
-    </li>
+      <a href="https://coderok.ru">www.coderok.ru</a>
+  </li>
 </ul>
